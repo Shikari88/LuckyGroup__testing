@@ -1,0 +1,66 @@
+.desc {
+    &__title {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 6.5rem;
+      color: #2D2D2D;
+      width: 47.5rem;
+      margin-top: 11rem;
+      &--orange {
+        color: #FF8345;
+      }
+    }
+    &__subtitle {
+      color: #7C7C7C;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      margin-bottom: 3.5rem;
+      width: 44.5rem;
+    }
+    &__form {
+      margin-top: 6.1rem;
+    }
+    &__users {
+      margin: 4rem 0;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .desc {
+      &__title {
+        font-size: 4.4rem;
+      }
+    }
+}
+@media screen and (max-width: 768px) {
+    .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title, &__subtitle {
+          text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .desc {
+      &__title {
+        line-height: 5.5rem;
+        font-size: 3.4rem;
+      }
+      &__title, &__subtitle {
+        width: 36.5rem;
+      }
+    }
+}
+@media screen and (max-width: 320px) {
+    .desc {
+        &__title {
+          line-height: 5rem;
+          font-size: 2.8rem;
+        }
+        &__title, &__subtitle {
+          width: 28.5rem;
+        }
+    }
+}

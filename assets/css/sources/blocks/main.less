@@ -1,0 +1,15 @@
+.main {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main {
+        &__container {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

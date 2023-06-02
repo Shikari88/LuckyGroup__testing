@@ -1,0 +1,23 @@
+.users {
+    display: flex;
+    flex-direction: row;
+    height: 3.8rem;
+    &__icon {
+        display: flex;
+        flex-direction: row;
+    }
+    &__text {
+        font-family: "Roboto", sans-serif;
+        margin: 1rem 0 0 11.5rem;
+        color: #707070;
+        &--orange {
+            color: #FD905A;
+            font-weight: 500;
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .users {
+        width: 90%;
+    }
+}

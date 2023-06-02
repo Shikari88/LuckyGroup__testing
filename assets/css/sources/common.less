@@ -1,0 +1,53 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font: normal 1.6rem 'Poppins', sans-serif;
+    background-color: #ECF7F3;
+    &.lock {
+        overflow: hidden;
+    }
+}
+body,h1 {
+    margin: 0;
+}
+.container {
+    max-width: 1108px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 815px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    max-width: 615px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 390px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}

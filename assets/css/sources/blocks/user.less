@@ -1,0 +1,32 @@
+.user {
+    position: relative;
+        &__icon--orange {
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            background-color: #FF8345;
+            text-align: center;
+            color: #fff;
+            font-size: 2.3rem;
+        }
+        &__icon {
+            position: absolute;
+            top: 0;
+            &--1st {
+              z-index: 10;
+            }
+            &--2nd {
+              z-index: 9;
+              left: 2rem;
+            }
+            &--3rd {
+              z-index: 8;
+              left: 4.2rem;
+            }
+            &--4th {
+              z-index: 7;
+              left: 6.4rem;
+            }
+    }
+}

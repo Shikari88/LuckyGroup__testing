@@ -1,0 +1,145 @@
+.imgContent {
+    width: 45rem;
+    position: relative;
+    left: 2rem;
+    top: auto;
+    &__student {
+        position: absolute;
+        top: 12.2rem;
+        right: 7rem;
+        z-index: 10;
+        width: 32.6rem;
+    }
+    &__circle {
+        &--green {
+            width: 28rem;
+            height: 28rem;
+            border-radius: 50%;
+            background-color: #48b774;
+            position: absolute;
+            z-index: 9;
+            top: 19.7rem;
+            left: 8rem
+        }
+        &--grey {
+            width: 45rem;
+            height: 45rem;
+            border-radius: 50%;
+            border: 2px solid #E8E8E8;
+            position: absolute;
+            top: 7.8rem;
+            left: 0;
+            z-index: 8;
+            animation: 20s moving linear 7.6s normal none infinite running;
+            @keyframes moving {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    &__flag  {
+        position: absolute;
+        &--extra-sm-right, &--extra-sm-left {
+            width: 9rem;
+            img {
+                width: 100%;
+            }
+        }
+        &--extra-sm-left {
+
+            animation-name: flag_1;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            offset-path: path("M105 273C66.9254 309.828 44.4377 313.936 3 273");
+            offset-rotate: 0deg;
+        }
+        @keyframes flag_1 {
+            from {
+                offset-distance: 0;
+            }
+            to {
+                offset-distance: 100%;
+            }
+        }
+
+        &--lg {
+            animation-name: flag_2;
+            animation-duration: 3s;
+            animation-delay: 3.4s;
+            animation-fill-mode: forwards;
+            offset-path: path("M154 239C66.3747 216.153 37.1838 188.746 27 130");
+            offset-rotate: 0deg;
+        }
+        @keyframes flag_2 {
+            from {
+                offset-distance: 0;
+            }
+            to {
+                offset-distance: 100%;
+            }
+        }
+        &--sm {
+            animation-name: flag_3;
+            animation-duration: 3s;
+            animation-delay: 3.8s;
+            animation-fill-mode: forwards;
+            offset-path: path("M204 183C208.344 115.684 213.385 75.8172 235 12");
+            offset-rotate: 0deg;
+        }
+        @keyframes flag_3 {
+            from {
+                offset-distance: 0;
+            }
+            to {
+                offset-distance: 100%;
+            }
+        }
+        &--md {
+            animation-name: flag_4;
+            animation-duration: 3s;
+            animation-delay: 4.2s;
+            animation-fill-mode: forwards;
+            offset-path: path("M292 214C314.386 141.971 341.529 119.616 419 140");
+            offset-rotate: 0deg;
+        }
+        @keyframes flag_4 {
+            from {
+                offset-distance: 0;
+            }
+            to {
+                offset-distance: 100%;
+            }
+        }
+        &--extra-sm-right {
+            animation-name: flag_5;
+            animation-duration: 3s;
+            animation-delay: 4.6s;
+            animation-fill-mode: forwards;
+            offset-path: path("M304 249C367.852 213.378 396.775 223.299 441 273");
+            offset-rotate: 0deg;
+        }
+        @keyframes flag_5 {
+            from {
+                offset-distance: 0;
+            }
+            to {
+                offset-distance: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .imgContent {
+        left: -1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .imgContent {
+        display: none;
+    }
+}
